@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#339999"
+    tools:context=".MainActivity2" >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="26dp"
+        android:text="CONGRADULATIONS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backArrow"
+        android:layout_width="52dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="45dp"
+        android:background="#339999"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBronze"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="UseAppTint" />
+
+    <ImageView
+        android:id="@+id/bw2"
+        android:layout_width="139dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/earned"
+        app:layout_constraintEnd_toStartOf="@+id/bw3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bw1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/silverbw" />
+
+    <ImageView
+        android:id="@+id/bw1"
+        android:layout_width="129dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/earned"
+        app:layout_constraintEnd_toStartOf="@+id/bw2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/goldbw" />
+
+    <ImageView
+        android:id="@+id/bw3"
+        android:layout_width="127dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/earned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bw2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/bronzebw" />
+
+    <TextView
+        android:id="@+id/earned"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="103dp"
+        android:text="You have earned youself a Medal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bw2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgBronze"
+        android:layout_width="261dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earned"
+        app:srcCompat="@drawable/bronzewon" />
+
+    <ImageView
+        android:id="@+id/imgSilver"
+        android:layout_width="261dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earned"
+        app:srcCompat="@drawable/silverwon" />
+
+    <ImageView
+        android:id="@+id/imgGold"
+        android:layout_width="261dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earned"
+        app:srcCompat="@drawable/goldwon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="47dp"
+        android:text="Exit"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/backArrow"
+        app:layout_constraintTop_toBottomOf="@+id/imgBronze" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
