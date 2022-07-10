@@ -9,19 +9,19 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/congrats"
         android:layout_width="230dp"
         android:layout_height="31dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="26dp"
         android:text="CONGRADULATIONS"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20dp" android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,13 +30,13 @@
         android:layout_width="52dp"
         android:layout_height="23dp"
         android:layout_marginStart="51dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="53dp"
         android:layout_marginBottom="45dp"
         android:background="#339999"
         android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgBronze"
+        app:layout_constraintTop_toBottomOf="@+id/minutes"
         app:srcCompat="?attr/actionModeCloseDrawable"
         tools:ignore="UseAppTint" />
 
@@ -44,57 +44,72 @@
         android:id="@+id/bw2"
         android:layout_width="139dp"
         android:layout_height="144dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="49dp"
-        app:layout_constraintBottom_toTopOf="@+id/earned"
         app:layout_constraintEnd_toStartOf="@+id/bw3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/bw1"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/congrats"
         app:srcCompat="@drawable/silverbw" />
 
     <ImageView
         android:id="@+id/bw1"
         android:layout_width="129dp"
         android:layout_height="142dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintBottom_toTopOf="@+id/earned"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
         app:layout_constraintEnd_toStartOf="@+id/bw2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/congrats"
         app:srcCompat="@drawable/goldbw" />
 
     <ImageView
         android:id="@+id/bw3"
         android:layout_width="127dp"
         android:layout_height="142dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintBottom_toTopOf="@+id/earned"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bw2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/congrats"
         app:srcCompat="@drawable/bronzebw" />
 
     <TextView
-        android:id="@+id/earned"
+        android:id="@+id/hours"
         android:layout_width="310dp"
-        android:layout_height="29dp"
+        android:layout_height="0dp"
         android:layout_marginStart="103dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="103dp"
         android:text="You have earned youself a Medal"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bw2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/backArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBronze"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -102,11 +117,12 @@
         android:layout_width="261dp"
         android:layout_height="232dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="75dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/earned"
+        app:layout_constraintTop_toBottomOf="@+id/hours"
         app:srcCompat="@drawable/bronzewon" />
 
     <ImageView
@@ -114,11 +130,12 @@
         android:layout_width="261dp"
         android:layout_height="232dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="75dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/earned"
+        app:layout_constraintTop_toBottomOf="@+id/hours"
         app:srcCompat="@drawable/silverwon" />
 
     <ImageView
@@ -126,19 +143,20 @@
         android:layout_width="261dp"
         android:layout_height="232dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="75dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/earned"
+        app:layout_constraintTop_toBottomOf="@+id/hours"
         app:srcCompat="@drawable/goldwon" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="201dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="67dp"
         android:layout_marginEnd="83dp"
         android:layout_marginBottom="47dp"
         android:text="Exit"
@@ -149,6 +167,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/backArrow"
-        app:layout_constraintTop_toBottomOf="@+id/imgBronze" />
+        app:layout_constraintTop_toBottomOf="@+id/minutes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
