@@ -41,7 +41,10 @@ public static final String Motsotso = "Motsotso";
         TextView simplestResult1 = findViewById(R.id.hours);
         TextView simplestResult2 = findViewById(R.id.minutes);
 
-        simplestResult1.setText("Name "+simplestDiHours);
+        int huure = Integer.parseInt(simplestDiHours);
+        int minute = Integer.parseInt(simplestDiMinutes);
+
+        simplestResult1.setText("Name "+huure*minute);
 
     }
 }
