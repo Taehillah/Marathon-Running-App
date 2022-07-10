@@ -3,7 +3,6 @@ package com.example.marathon_rating_app;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -35,11 +34,21 @@ public class MainActivity extends AppCompatActivity {
                 String simplestDiHours = diHours.getText().toString();
                 String simplestDiMinutes = diMinutes.getText().toString();
 
-                //Intents to move data over
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                intent.putExtra("SIMPLESTDIHOURS",simplestDiHours);
-                intent.putExtra("SIMPLESTDIMINUTES",simplestDiMinutes);
-                startActivity(intent);
+                if (TextUtils.isEmpty(diHours.getText().toString()))
+                {
+                    diHours.setError("Please enter the Hours you Ran");
+                }
+                else if (TextUtils.isEmpty(diMinutes.getText().toString()))
+                {
+                    diMinutes.setError("Please enter the Minutes you Ran");
+                }
+                else
+                {
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    intent.putExtra("SIMPLESTDIMINUTES", simplestDiMinutes);
+                    intent.putExtra("SIMPLESTDIHOURS", simplestDiHours);
+                    startActivity(intent);
+                }
             }
         });
 
