@@ -45,25 +45,3 @@ public static final String Motsotso = "Motsotso";
 
     }
 }
-
-
-/*
-        val1 = findViewById(R.id.hours);
-        val2 = findViewById(R.id.minutes);
-
-        Intent i = getIntent();
-        hr = i.getStringExtra(Hora);
-        min = i.getIntExtra(Motsotso, defaultValue);
-
-        val1.setText("Hi "+hr);
-        val2.setText("Hey "+min);
-
-       ImageButton backArrow = (ImageButton) findViewById(R.id.backArrow);
-        backArrow.setOnClickListener(new View.OnClickListener()){
-            @Override
-            public void onClick(View view) {
-                openMainActivity();
-            }
-        };
-}
-*/
